@@ -1,1 +1,1 @@
-# eka
+# PNPM Monorepo Configuration
