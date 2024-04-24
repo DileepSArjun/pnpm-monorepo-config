@@ -1,0 +1,26 @@
+{
+  "name": "pnpm-monorepo",
+  "private": true,
+  "description": "...",
+  "author": "...",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf \"**/node_modules\" && pnpm -r clean",
+    "fresh": "pnpm clean && pnpm i",
+    "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
+    "format": "prettier",
+    "format:check": "pnpm format --check --debug-check",
+    "format:fix": "pnpm format --write"
+  },
+  "engines": {
+    "node": ">=18.18.0",
+    "pnpm": ">=9.0.0",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm"
+  },
+  "packageManager": "pnpm@9.0.1",
+  "dependencies": {
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.2.5"
+  }
+}
