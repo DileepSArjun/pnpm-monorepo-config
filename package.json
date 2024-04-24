@@ -10,7 +10,9 @@
     "nuke": "rimraf pnpm-lock.yaml && pnpm fresh",
     "format": "prettier",
     "format:check": "pnpm format --check --debug-check",
-    "format:fix": "pnpm format --write"
+    "format:fix": "pnpm format --write",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint:fix": "pnpm lint --fix"
   },
   "engines": {
     "node": ">=18.18.0",
@@ -20,7 +22,11 @@
   },
   "packageManager": "pnpm@9.0.1",
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.10.2",
     "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5"
   }
 }

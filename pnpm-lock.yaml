@@ -8,9 +8,21 @@ importers:
 
   .:
     dependencies:
+      '@rushstack/eslint-patch':
+        specifier: ^1.10.2
+        version: 1.10.2
       '@vue/eslint-config-prettier':
         specifier: ^9.0.0
         version: 9.0.0(eslint@8.57.0)(prettier@3.2.5)
+      '@vue/eslint-config-typescript':
+        specifier: ^13.0.0
+        version: 13.0.0(eslint-plugin-vue@9.25.0(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      eslint-plugin-vue:
+        specifier: ^9.23.0
+        version: 9.25.0(eslint@8.57.0)
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -27,9 +39,6 @@ importers:
         specifier: ^4.3.0
         version: 4.3.2(vue@3.4.25(typescript@5.4.5))
     devDependencies:
-      '@rushstack/eslint-patch':
-        specifier: ^1.8.0
-        version: 1.10.2
       '@tsconfig/node20':
         specifier: ^20.1.4
         version: 20.1.4
@@ -42,12 +51,6 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^5.0.4
         version: 5.0.4(vite@5.2.10(@types/node@20.12.7))(vue@3.4.25(typescript@5.4.5))
-      '@vue/eslint-config-prettier':
-        specifier: ^9.0.0
-        version: 9.0.0(eslint@8.57.0)(prettier@3.2.5)
-      '@vue/eslint-config-typescript':
-        specifier: ^13.0.0
-        version: 13.0.0(eslint-plugin-vue@9.25.0(eslint@8.57.0))(eslint@8.57.0)(typescript@5.4.5)
       '@vue/test-utils':
         specifier: ^2.4.5
         version: 2.4.5
@@ -57,15 +60,9 @@ importers:
       cypress:
         specifier: ^13.7.2
         version: 13.8.1
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
       eslint-plugin-cypress:
         specifier: ^2.15.1
         version: 2.15.2(eslint@8.57.0)
-      eslint-plugin-vue:
-        specifier: ^9.23.0
-        version: 9.25.0(eslint@8.57.0)
       jsdom:
         specifier: ^24.0.0
         version: 24.0.0
